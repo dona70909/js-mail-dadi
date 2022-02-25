@@ -19,51 +19,66 @@
 <body>
     <header>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row p-4 text-center">
                 <div class="col-12">
                     <h1>E-mail and roll the dice</h1>
                 </div>
             </div>
         </div>
     </header>
-
-    <main>
+    
+    <main class="p-4" >
         <section>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12">
-                        <label for="my-email">E-mail</label>
-                        <input type="email" id="my-email" value="">
-                    </div>
+                    <div class="col-12 d-md-flex justify-content-md-between mb-4">
 
+                        <div class="mb-1 ">
+                            <label for="my-name">Nome</label>
+                            <input type="text" id="my-name" value="">
+                        </div>
+
+                        <div class="mb-1">
+                            <label for="my-surname">Cognome</label>
+                            <input type="email" id="my-surname" value="">
+                        </div>
+
+                        <div class="mb-1">
+                            <label for="my-email">E-mail</label>
+                            <input type="email" id="my-email" value="">      
+                        </div>                 
+
+                    </div>
+                    
                     <div class="col-12">
+                        <button class="btn btn-light" id="my-submit-input">Gioca!</button>
                         <p id="output-email-check"></p>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section>
+        
+        <section id="my-game" class="d-none">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <h1>Roll the dice game</h1>
                     </div>
-
+                    
                     <div class="col-12">
                         <button class="btn btn-danger" id="my-dice-btn-one"> Player 1</button>
                         <button class="btn btn-primary" id="my-dice-btn-two"> Player 2</button>
                         <button class="btn btn-secondary" id="my-score"> Score</button>
                     </div>
-
+                    
                     <div class="co-6">
                         <p id="output-one"></p>
                     </div>
-
+                    
                     <div class="co-6">
                         <p id="output-two"></p>
                     </div>
-
+                    
                     <div class="col-12">
                         <p id="output-winner"></p>
                     </div>
@@ -71,7 +86,7 @@
             </div>
         </section>
     </main>
-
+    
     <script type="text/javascript" src="js/myscript.js"></script>
 </body>
 </html>
