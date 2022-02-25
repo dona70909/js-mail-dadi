@@ -1,5 +1,7 @@
 body{
-    background-color: rgb(184, 145, 221);
+    background-image: url(../img/dice.png);
+    object-fit: contain;
+    background-position: 0% 40%;
 }
 
 header{
