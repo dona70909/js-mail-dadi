@@ -32,8 +32,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <label for="my-email">Inserisci l'e-mail</label>
-                        <input type="email" id="my-email">
+                        <label for="my-email">E-mail</label>
+                        <input type="email" id="my-email" value="">
+                    </div>
+
+                    <div class="col-12">
+                        <p id="output-email-check"></p>
                     </div>
                 </div>
             </div>
@@ -47,12 +51,14 @@
                     </div>
 
                     <div class="col-12">
-                        <button class="btn" id="my-dice-btn-one">Player 1</button>
-                        <button class="btn" id="my-dice-btn-two">Player 2</button>
+                        <button class="btn btn-danger" id="my-dice-btn-one">Player 1</button>
+                        <button class="btn btn-primary" id="my-dice-btn-two">Player 2</button>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <script type="text/javascript" src="js/myscript.js"></script>
 </body>
 </html>
