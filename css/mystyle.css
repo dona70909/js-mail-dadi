@@ -1,9 +1,11 @@
 body{
-    background-image: url(../img/dice.png);
-    object-fit: contain;
-    background-position: 0% 40%;
+    background-image: url("../img/dice.jpg");
 }
 
 header{
     background-color: white;
+}
+
+.my-sahdow{
+    box-shadow: .5rem .5rem .5rem black;
 }
