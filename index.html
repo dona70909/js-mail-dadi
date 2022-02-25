@@ -21,7 +21,7 @@
         <div class="container-fluid">
             <div class="row p-4 text-center">
                 <div class="col-12">
-                    <h1>E-mail and roll the dice</h1>
+                    <h1 class="text-uppercase fw-bold">Roll the dice</h1>
                 </div>
             </div>
         </div>
@@ -31,7 +31,7 @@
         <section>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 d-md-flex justify-content-md-between mb-4 text-white">
+                    <div class="col-12 d-md-flex justify-content-md-between mb-4 text-white ">
 
                         <div class="mb-1 ">
                             <label for="my-name">Nome</label>
@@ -50,37 +50,50 @@
 
                     </div>
                     
-                    <div class="col-12">
-                        <button class="btn btn-light" id="my-submit-input">Gioca!</button>
-                        <p id="output-email-check"></p>
+                    <div class="col-12 ">
+                        <button class="btn btn-light mb-2" id="my-submit-input">Gioca!</button>
+                        <p id="output-email-check" class="text-white"></p>
                     </div>
                 </div>
             </div>
         </section>
         
-        <section id="my-game" class="">
+        <section id="my-game" class="text-white">
             <div class="container">
                 <div class="row mb-3">
                     <div class="col-12">
-                        <h1 class="text-uppercase text-center text-white fw-bold">Roll the dice</h1>
+                        <h1 class="text-uppercase text-center text-white fw-bold">Game</h1>
                     </div>
                     
-                    <div class="col-12">
+                    <div class="col-12 mb-4">
                         <button class="btn btn-danger my-shadow" id="my-dice-btn-one"> Player 1</button>
                         <button class="btn btn-primary my-shadow" id="my-dice-btn-two"> Player 2</button>
                         <button class="btn btn-secondary my-shadow" id="my-score"> Score</button>
                     </div>
                     
-                    <div class="co-6">
-                        <p id="output-one"></p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-fluid">
+                <div class="row mb-4">
+                    <div class="col-12 d-flex justify-content-around ">
+                        <div class="co-6 me-2">
+                            <div class="my-box my-sahdow my-box-blue text-center">
+                                <p id="output-one" class="fw-bold fs-1"></p>
+                            </div>
+                        </div>
+                        
+                        <div class="co-6 my-box my-sahdow my-box-red text-center">
+                            <p id="output-two" class="fw-bold fs-1"></p>
+                        </div>
                     </div>
-                    
-                    <div class="co-6">
-                        <p id="output-two"></p>
-                    </div>
-                    
-                    <div class="col-12">
-                        <p id="output-winner"></p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-6 text-center">
+                        <p id="output-winner" class="fw-bold fs-1 my-winner-text text-uppercase"></p>
                     </div>
                 </div>
             </div>

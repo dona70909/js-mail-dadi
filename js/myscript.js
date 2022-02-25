@@ -22,7 +22,6 @@ enterEmail.addEventListener("click", function(){
     for(i = 0; i<arrayEmail.length; i++){
         if(arrayEmail[i] == inputUserEmail.value){
             
-            outputCheckEmail.innerHTML = "ok";
             gameStart.classList.remove("d-none"); 
             
             const btnOne = document.getElementById("my-dice-btn-one");
