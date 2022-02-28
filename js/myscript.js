@@ -1,11 +1,9 @@
 const arrayEmail = ["ciao@gmail.com", "st546hdg@gmail", "12top@gmail.com"];
-const inputUserEmail = document.getElementById("my-email");
+
 const outputCheckEmail  = document.getElementById("output-email-check");
 const outputRandomOne = document.getElementById("output-one");
 const outputRandomTwo = document.getElementById("output-two");
 const outWinner = document.getElementById("output-winner");
-/* const arrayDiceOne = [];
-const arrayDiceTwo = []; */
 const gameStart = document.getElementById("my-game");
 const diceStart = document.getElementById("my-container-winner");
 
@@ -16,9 +14,11 @@ let diceTwo = Math.floor((Math.random() * 6) + 1);
 
 const enterEmail = document.getElementById("my-submit-input");
 enterEmail.addEventListener("click", function(){
+
+    const inputUserEmail = document.getElementById("my-email").value.toLowerCase().trim();
     
-    for(i = 0; i<arrayEmail.length; i++){
-        if(arrayEmail[i] == inputUserEmail.value){
+    for(let i = 0; i<arrayEmail.length; i++){
+        if(arrayEmail[i] == inputUserEmail){
             
             outputCheckEmail.innerHTML = "Access granted!";
             gameStart.classList.remove("d-none"); 
